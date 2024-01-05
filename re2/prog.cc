@@ -291,6 +291,7 @@ void Prog::Optimize() {
   }
 }
 
+[[ clang::no_sanitize( "integer" ) ]]
 uint32_t Prog::EmptyFlags(absl::string_view text, const char* p) {
   int flags = 0;
 
