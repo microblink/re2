@@ -11,6 +11,7 @@
 
 namespace re2 {
 
+[[ clang::no_sanitize( "integer" ) ]]
 int Bitmap256::FindNextSetBit(int c) const {
   ABSL_DCHECK_GE(c, 0);
   ABSL_DCHECK_LE(c, 255);
